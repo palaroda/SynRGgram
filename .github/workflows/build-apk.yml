@@ -1,4 +1,4 @@
-name: Build ZaStoGram APK
+name: Build SynRGgram APK
 
 # Сборка устанавливаемого APK прямо в облаке GitHub — локально ничего ставить не нужно.
 #
@@ -231,7 +231,7 @@ jobs:
       - name: Download APK artifacts
         uses: actions/download-artifact@v4
         with:
-          pattern: ZaStoGram-standalone-*
+          pattern: SynRGgram-standalone-*
           path: dist-release
           merge-multiple: true
 
@@ -240,8 +240,8 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          TAG="zastogram-apk-${{ github.run_number }}-${{ github.run_attempt }}"
-          TITLE="ZaStoGram APK #${{ github.run_number }}.${{ github.run_attempt }}"
+          TAG="SynRGgram-apk-${{ github.run_number }}-${{ github.run_attempt }}"
+          TITLE="SynRGgram APK #${{ github.run_number }}.${{ github.run_attempt }}"
           shopt -s nullglob
           APKS=(dist-release/*.apk)
           if [ "${#APKS[@]}" -eq 0 ]; then
