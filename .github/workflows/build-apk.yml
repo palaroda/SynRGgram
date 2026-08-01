@@ -41,21 +41,21 @@ jobs:
             abi: arm64-v8a
             artifact: SynRGgram-standalone-arm64-v8a
             ccache_key: ccache-arm64-v8a-standalone
-          - flavor: Armv7
-            flavor_dir: armv7
-            abi: armeabi-v7a
-            artifact: SynRGgram-standalone-armeabi-v7a
-            ccache_key: ccache-armeabi-v7a-standalone
-          - flavor: X86
-            flavor_dir: x86
-            abi: x86
-            artifact: SynRGgram-standalone-x86
-            ccache_key: ccache-x86-standalone
-          - flavor: X64
-            flavor_dir: x64
-            abi: x86_64
-            artifact: SynRGgram-standalone-x86_64
-            ccache_key: ccache-x86_64-standalone
+#          - flavor: Armv7
+#            flavor_dir: armv7
+#            abi: armeabi-v7a
+#            artifact: SynRGgram-standalone-armeabi-v7a
+#            ccache_key: ccache-armeabi-v7a-standalone
+#          - flavor: X86
+#            flavor_dir: x86
+#            abi: x86
+#            artifact: SynRGgram-standalone-x86
+#            ccache_key: ccache-x86-standalone
+#          - flavor: X64
+#            flavor_dir: x64
+#            abi: x86_64
+#            artifact: SynRGgram-standalone-x86_64
+#            ccache_key: ccache-x86_64-standalone
     steps:
       - name: Checkout
         uses: actions/checkout@v4
