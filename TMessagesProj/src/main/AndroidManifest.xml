@@ -96,6 +96,9 @@
 
     <application
         android:name="org.telegram.messenger.ApplicationLoader"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/AppName"
         android:allowBackup="true"
         android:restoreAnyVersion="true"
         android:backupAgent=".BackupAgent"
@@ -107,7 +110,7 @@
         android:requestLegacyExternalStorage="true"
         android:preserveLegacyExternalStorage="true"
         android:allowAudioPlaybackCapture="true"
-        tools:replace="android:supportsRtl"
+        tools:replace="android:supportsRtl,android:icon,android:roundIcon,android:label"
         android:usesCleartextTraffic="true"
         android:enableOnBackInvokedCallback="true"
     >
