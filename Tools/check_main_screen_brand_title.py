@@ -34,10 +34,10 @@ def main() -> int:
     strings = STRINGS.read_text(encoding="utf-8")
     strings_ru = STRINGS_RU.read_text(encoding="utf-8")
 
-    if '<string name="AppName">ZaStoGram</string>' not in strings:
-        fail("base AppName resource must be ZaStoGram")
-    if '<string name="AppName">ZaStoGram</string>' not in strings_ru:
-        fail("Russian AppName resource must be ZaStoGram")
+    if '<string name="AppName">SynRGgram</string>' not in strings:
+        fail("base AppName resource must be SynRGgram")
+    if '<string name="AppName">SynRGgram</string>' not in strings_ru:
+        fail("Russian AppName resource must be SynRGgram")
 
     main_title_block = slice_between(
         dialogs_activity,
