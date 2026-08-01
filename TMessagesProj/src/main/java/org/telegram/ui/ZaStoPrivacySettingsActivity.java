@@ -62,7 +62,7 @@ public class ZaStoPrivacySettingsActivity extends BaseFragment {
     public View createView(Context context) {
         actionBar.setBackButtonImage(R.drawable.ic_ab_back);
         actionBar.setAllowOverlayTitle(true);
-        actionBar.setTitle("ZaSto Приватность");
+        actionBar.setTitle("SynRG Приватность");
         actionBar.setActionBarMenuOnItemClick(new ActionBar.ActionBarMenuOnItemClick() {
             @Override
             public void onItemClick(int id) {
@@ -168,10 +168,10 @@ public class ZaStoPrivacySettingsActivity extends BaseFragment {
         public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
             switch (getItemViewType(position)) {
                 case VIEW_TYPE_HEADER:
-                    ((HeaderCell) holder.itemView).setText("Функции приватности ZaSto");
+                    ((HeaderCell) holder.itemView).setText("Функции приватности SynRG");
                     break;
                 case VIEW_TYPE_INFO:
-                    ((TextInfoPrivacyCell) holder.itemView).setText("По умолчанию всё включено. Выключение тумблера отменяет соответствующую функцию ZaSto.");
+                    ((TextInfoPrivacyCell) holder.itemView).setText("По умолчанию всё включено. Выключение тумблера отменяет соответствующую функцию SynRG.");
                     break;
                 default:
                     TextCheckCell cell = (TextCheckCell) holder.itemView;
