@@ -688,7 +688,7 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
         }
 
         // ZaStoGram — все кастомные настройки форка в одном отдельном разделе (отдельно от официальных).
-        items.add(UItem.asHeader("ZaStoGram"));
+        items.add(UItem.asHeader("SynRGgram"));
         items.add(SettingCell.Factory.of(1001, IconBackgroundColors.GREEN.top, IconBackgroundColors.GREEN.bottom, R.drawable.settings_privacy, "Приватность", "Удалённые, самоуничтожение, view-once, скриншоты, реклама"));
         items.add(SettingCell.Factory.of(1003, IconBackgroundColors.PURPLE.top, IconBackgroundColors.PURPLE.bottom, R.drawable.settings_folders, "Плагины", "Python-плагины (совместимы с exteraGram)"));
         // ZaStoGram — каталог бесплатных прокси вынесен на отдельный экран (FreeProxySettingsActivity).
